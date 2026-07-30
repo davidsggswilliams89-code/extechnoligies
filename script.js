@@ -214,3 +214,46 @@ setInterval(() => {
     slides[currentSlide].classList.add("active");
 
 }, 3000);
+
+/* ==========================================
+LIGHT / DARK MODE WITH MEMORY
+========================================== */
+
+const themeToggle =
+document.getElementById("themeToggle");
+
+/* Load saved theme */
+
+if(localStorage.getItem("theme") === "light"){
+
+document.body.classList.add("light-mode");
+
+themeToggle.textContent = "☀️";
+
+}else{
+
+themeToggle.textContent = "🌙";
+
+}
+
+/* Toggle Theme */
+
+themeToggle.onclick = () => {
+
+document.body.classList.toggle("light-mode");
+
+if(document.body.classList.contains("light-mode")){
+
+localStorage.setItem("theme","light");
+
+themeToggle.textContent = "☀️";
+
+}else{
+
+localStorage.setItem("theme","dark");
+
+themeToggle.textContent = "🌙";
+
+}
+
+};
