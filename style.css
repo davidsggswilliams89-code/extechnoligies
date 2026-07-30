@@ -447,19 +447,18 @@ z-index:0;
 @keyframes glowFloat{
 
 0%{
-transform:translateY(0);
+transform:translate(-50%,-50%) translateY(0);
 }
 
 50%{
-transform:translateY(-18px);
+transform:translate(-50%,-50%) translateY(-18px);
 }
 
 100%{
-transform:translateY(0);
+transform:translate(-50%,-50%) translateY(0);
 }
 
 }
-
 
 /* ==========================================================
 HERO IMAGE CAROUSEL
@@ -480,9 +479,16 @@ min-height:650px;
 .hero-image::before{
 
 content:"";
+
 position:absolute;
-width:700px;
-height:700px;
+
+top:50%;
+left:50%;
+
+transform:translate(-50%,-50%);
+
+width:min(90vw,700px);
+height:min(90vw,700px);
 
 border-radius:50%;
 
@@ -492,11 +498,13 @@ rgba(56,189,248,.35) 35%,
 rgba(37,99,235,.18) 60%,
 transparent 80%);
 
-filter:blur(80px);
+filter:blur(clamp(40px,8vw,80px));
 
 animation:glowFloat 6s ease-in-out infinite;
 
 z-index:0;
+
+pointer-events:none;
 
 }
 
@@ -1522,8 +1530,6 @@ object-fit:contain;
 
 .hero-image::before{
 
-width:700px;
-height:700px;
 
 }
 
