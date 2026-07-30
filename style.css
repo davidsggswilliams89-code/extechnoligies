@@ -84,12 +84,41 @@ display:block;
 SECTION SPACING
 ========================================================== */
 
-section{
-
-padding:100px 0;
-
+.about{
+    padding:60px 0;
 }
 
+.stats{
+    padding:50px 0;
+}
+
+.why-us{
+    padding:60px 0;
+}
+
+.services{
+    padding:60px 0;
+}
+
+.projects{
+    padding:60px 0;
+}
+
+.technologies{
+    padding:60px 0;
+}
+
+.process{
+    padding:60px 0;
+}
+
+.testimonials{
+    padding:60px 0;
+}
+
+.contact{
+    padding:60px 0;
+}
 
 /* ==========================================================
 SECTION TITLE
