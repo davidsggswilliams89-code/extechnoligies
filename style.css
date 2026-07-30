@@ -466,6 +466,7 @@ HERO IMAGE CAROUSEL
 ========================================================== */
 
 .hero-slider{
+.hero-slider{
 
 position:relative;
 
@@ -473,22 +474,19 @@ width:100%;
 max-width:650px;
 height:650px;
 
-display:flex;
-justify-content:center;
-align-items:center;
+padding:10px;
 
 border-radius:28px;
 
-padding:20px;
+overflow:hidden;
 
-border:2px solid rgba(56,189,248,.25);
+background:rgba(255,255,255,.03);
+
+border:2px solid rgba(56,189,248,.20);
 
 box-shadow:
-0 0 30px rgba(56,189,248,.35),
-0 0 80px rgba(37,99,235,.25),
-inset 0 0 25px rgba(56,189,248,.15);
-
-overflow:hidden;
+0 0 25px rgba(56,189,248,.25),
+0 0 60px rgba(37,99,235,.18);
 
 z-index:2;
 
@@ -496,16 +494,14 @@ z-index:2;
 
 .slide{
 
+display:none;
+
 width:100%;
 height:100%;
 
-object-fit:contain;
+object-fit:cover;
 
-border-radius:28px;
-
-display:none;
-
-filter:drop-shadow(0 20px 40px rgba(37,99,235,.45));
+border-radius:20px;
 
 }
 
