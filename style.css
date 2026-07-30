@@ -1266,6 +1266,88 @@ margin:auto;
 }
     
 }
+
+/* ==========================================================
+LIGHT / DARK MODE
+========================================================== */
+
+.theme-toggle{
+
+background:none;
+border:2px solid #38bdf8;
+color:#fff;
+
+width:45px;
+height:45px;
+
+border-radius:50%;
+cursor:pointer;
+
+font-size:20px;
+
+transition:.3s;
+
+}
+
+.theme-toggle:hover{
+
+background:#38bdf8;
+color:#050816;
+
+}
+
+/* Light Theme */
+
+body.light-mode{
+
+background:#f8fafc;
+color:#111827;
+
+}
+
+body.light-mode header{
+
+background:#ffffff;
+border-bottom:1px solid #ddd;
+
+}
+
+body.light-mode a{
+
+color:#111827;
+
+}
+
+body.light-mode .section-title h2,
+body.light-mode h1,
+body.light-mode h2,
+body.light-mode h3,
+body.light-mode h4{
+
+color:#111827;
+
+}
+
+body.light-mode p{
+
+color:#475569;
+
+}
+
+body.light-mode .project-card,
+body.light-mode .service-card,
+body.light-mode .feature-card,
+body.light-mode .testimonial-card,
+body.light-mode .process-card,
+body.light-mode .about-card,
+body.light-mode .stat-card,
+body.light-mode .tech-card{
+
+background:#ffffff;
+border:1px solid #e5e7eb;
+
+}
+
 /* ==========================================================
 JAVASCRIPT EFFECT CLASSES
 ========================================================== */
